@@ -150,7 +150,7 @@ export default function Home() {
         <div className="relative mb-8 group animate-[fadeInUp_1s_ease-out_0.2s_both]">
           <div className="absolute -inset-1.5 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur opacity-20 group-hover:opacity-50 transition duration-500"></div>
           <div className="relative w-36 h-36 bg-slate-200 rounded-full overflow-hidden border-4 border-white dark:border-slate-950 shadow-2xl transition-all duration-500 group-hover:scale-105">
-            <img 
+            <img
               src="/profil.jpg" 
               alt="Giovanni NGOMBA" 
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -273,7 +273,7 @@ export default function Home() {
               </p>
               <div className="space-y-3 font-mono text-xs opacity-60">
                 <p className="hover:translate-x-1.5 transition-transform duration-200 cursor-default">📍 Douala, Cameroun</p>
-                <p className="hover:translate-x-1.5 transition-transform duration-200 cursor-default">📧 giovanni.ngomba@email.com</p>
+                <p className="hover:translate-x-1.5 transition-transform duration-200 cursor-default">📧 ngombagiovanni@gmail.com.com</p>
               </div>
             </RevealOnScroll>
           </div>
