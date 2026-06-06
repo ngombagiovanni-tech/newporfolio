@@ -53,7 +53,7 @@ export default function Home() {
       setIsScrolled(window.scrollY > 20);
     };
 
-    const handleMouseMove = (e: React.MouseEvent) => {
+    const handleMouseMove = (e: any) => {
       setMousePos({ x: e.clientX, y: e.clientY });
     };
 
