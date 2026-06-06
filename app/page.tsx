@@ -53,7 +53,7 @@ export default function Home() {
       setIsScrolled(window.scrollY > 20);
     };
 
-    const handleMouseMove = (e: MouseMoveEvent) => {
+    const handleMouseMove = (e: React.MouseEvent) => {
       setMousePos({ x: e.clientX, y: e.clientY });
     };
 
@@ -181,7 +181,7 @@ export default function Home() {
 
         {/* Badges de technologies */}
         <div className="flex flex-wrap gap-2 justify-center max-w-lg animate-[fadeInUp_1s_ease-out_0.6s_both]">
-          {['Next.js','Python','Kali Linux'].map((tag, i) => (
+          {['Next.js', 'Tailwind CSS', 'Python','Kali Linux'].map((tag, i) => (
             <span key={i} className={`px-3 py-1 ${themeCard} border rounded-lg text-xs font-mono hover:border-blue-500/40 hover:text-blue-500 dark:hover:text-cyan-400 hover:scale-105 transition-all duration-200 cursor-default`}>
               🛡️ {tag}
             </span>
@@ -200,7 +200,7 @@ export default function Home() {
           {[
             { title: 'Sécurité & Pentesting', icon: <Shield size={20} />, items: ["Tests d'intrusion", "Analyse de vulnérabilités", "Kali Linux"], glow: 'hover:shadow-[0_0_25px_-3px_rgba(16,185,129,0.25)]', hoverBorder: 'hover:border-emerald-500/50', delay: '0ms' },
             { title: 'Systèmes & Réseaux', icon: <Lock size={20} />, items: ["Admin Linux"], glow: 'hover:shadow-[0_0_25px_-3px_rgba(34,211,238,0.25)]', hoverBorder: 'hover:border-cyan-500/50', delay: '100ms' },
-            { title: 'Développement Web', icon: <Code size={20} />, items: ["Python (Django/Flask)", "Next.js", "Bases de données"], glow: 'hover:shadow-[0_0_25px_-3px_rgba(59,130,246,0.25)]', hoverBorder: 'hover:border-blue-500/50', delay: '200ms' }
+            { title: 'Développement Web', icon: <Code size={20} />, items: ["Python (Django/Flask)", "Next.js & Tailwind", "Bases de données"], glow: 'hover:shadow-[0_0_25px_-3px_rgba(59,130,246,0.25)]', hoverBorder: 'hover:border-blue-500/50', delay: '200ms' }
           ].map((skill, index) => (
             <RevealOnScroll key={index} delay={skill.delay}>
               <div className={`${themeCard} border p-6 rounded-2xl shadow-sm hover:-translate-y-2 ${skill.glow} ${skill.hoverBorder} transition-all duration-500 ease-out group`}>
